@@ -1,0 +1,26 @@
+<ion-header>
+
+  
+  <ion-navbar color="primary">
+    <ion-title>REGISTRO</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding id= "new">
+    <ion-item>
+        <ion-label floating>usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="user.email">
+          </ion-input>
+      </ion-item>
+    
+      <ion-item>
+          <ion-label floating>clave</ion-label>
+            <ion-input type="text" [(ngModel)]="user.password">
+            </ion-input>
+        </ion-item>
+        
+        <button ion-button (click)="register(user)">registrar </button>
+
+</ion-content>

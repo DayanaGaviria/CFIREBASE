@@ -1,0 +1,32 @@
+
+<ion-header>
+ 
+  <ion-navbar color="primary">
+    <ion-title>TELEFONOS</ion-title>
+
+     <ion-buttons end>
+
+      <button ion-button round icon-only color='dark'  
+      
+      (click)="navigateToAddShoppingPage()">
+        <ion-icon name="add"   ></ion-icon >
+      </button>
+    </ion-buttons>
+  
+  </ion-navbar> 
+
+  
+</ion-header>
+
+
+<ion-content padding id="contenido">
+
+  <ion-list>
+    <ion-item *ngFor="let item of shoppingListRef$ | async" (click)="selectShoppingItem(item)">
+      <h2> nombre: {{item.itemName}}</h2>
+      <h3>cantidad: {{item.itemNumber}}</h3>
+    </ion-item>
+  </ion-list>
+
+ 
+</ion-content>

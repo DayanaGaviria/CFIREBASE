@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding id= "nuevo" >
+  <ion-item>
+    
+    <ion-label floating>usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email">
+      </ion-input>
+   
+  </ion-item>
+  
+  <ion-item>
+      <ion-label floating>contraseña</ion-label>
+        <ion-input type="text" [(ngModel)]="user.password">
+        </ion-input>
+    </ion-item>
+
+    <button ion-button round color="primary" (click)="login(user)">iniciar sesion </button>
+    <button ion-button round color = "danger" (click)="register()">registrar </button>
+
+</ion-content>

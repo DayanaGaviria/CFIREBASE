@@ -1,0 +1,42 @@
+page-inicio {
+    
+    #nuevo{
+        background-image: url('https://images.pexels.com/photos/1040473/pexels-photo-1040473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') ;
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-position: center ;
+        width: 100% ;
+        position: relative ;
+        border: none ;
+
+
+    }
+
+    #boton{
+       
+            text-align: center;
+                        
+    }
+
+    #boton button{
+        width: 100px;
+        height: 100px;
+        margin-top: 130px;
+          
+
+    }
+
+    #boton ion-icon{
+        font-size: 80px;
+        color: black;
+    }
+
+    #botones{
+
+        text-align: center;
+        margin-top: 60px; 
+       
+
+    }
+
+}
